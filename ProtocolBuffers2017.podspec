@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ProtocolBuffers2017"
-  s.version      = "2.5.0"
+  s.version      = "2.5.1"
   s.summary      = "An Objective-C implementation of Google proto buffer for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -119,6 +119,8 @@ Pod::Spec.new do |s|
   #  you can include multiple dependencies to ensure it works.
 
   s.requires_arc = false
+
+  s.prefix_header_contents = '#import <Foundation/Foundation.h>', '#import "Bootstrap.h"'
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
